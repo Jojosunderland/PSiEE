@@ -298,3 +298,11 @@ ggplot(penguins_subset, aes(x=species, fill = sex)) +
   geom_bar(position = "dodge") 
 
 
+## CHALLENGES ##
+ggplot(penguins, aes(x=species, y = flipper_length_mm)) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.3, aes(colour=species)) +
+  theme_bw() +
+  labs(x = "Species", y = "Flipper Length (mm)")
+
+
